@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -15,7 +16,7 @@
       </a>
       <form class="user-form" action="https://echo.htmlacademy.ru/" method="post">
         <label>
-          Поиск
+          <span class="visually-hidden">Поиск</span>
           <input class="search-information" type ="search" placeholder="Текст поиска">
         </label>
         <button class="search-button" type="button">Найти</button>
@@ -42,10 +43,13 @@
           </li>
         </ul>
       </nav>
-      <h2 class="catalog-product">Каталог товаров</h2>
-      <button class="button-catalog-open" type="submit">
-        <span class="visually-hidden">Открыть каталог</span>
-      </button>
+      <h2 class="visually-hidden">Каталог товаров</h2>
+      <label>
+        <span class="catalog-open">Каталог товаров</span>
+        <button class="button-catalog-open" type="submit">
+          <span class="visually-hidden">Открыть каталог</span>
+        </button>
+      </label>
       <nav class="navigation-catalog">
         <ul class="navigation-catalog-list">
           <li class="navigation-catalog-item">
@@ -100,10 +104,10 @@
       <section class="catalog-product">
         <h3 class="visually-hidden">Список товаров по фильтрам</h3>
         <b class="catalog-filter-title">Фильтр</b>
-        <b class="catalog-sorting-title">Сортировка</b>
+        <b class="catalog-filter-title">Сортировка</b>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Цвет</legend>
+            <legend class="catalog-filter-value">Цвет</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
@@ -138,7 +142,7 @@
             </ul>
           </fieldset>
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Bluetooth</legend>
+            <legend class="catalog-filter-value">Bluetooth</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
@@ -154,10 +158,10 @@
               </li>
             </ul>
           </fieldset>
-          <button class="more-detailed-item" type="submit">Показать</button>
+          <button class="more-detailed-button" type="submit">Показать</button>
         </form>
         <select class="select-control" aria-label="Сортировка">
-          <option value="Popular">Популярные</option>
+          <option value="popular">Популярные</option>
         </select>
         <div class="sort-container">
           <button class="sort-up" type="button">
@@ -173,6 +177,7 @@
             </svg>
           </button>
         </div>
+        <div class="inner-products-container">
         <ul class="inner-products-list">
           <li class="inner-products-item">
             <a class="inner-products-link" href="#">
@@ -206,27 +211,28 @@
         <button class="show-more" type="button">Загрузить еще</button>
         <ul class="pagination">
           <li class="pagination-item">
-            <a class="pagination-link pagination-current" href="#">Назад</a>
+            <a class="pagination-link-back pagination-current" href="#">Назад</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">1</a>
+            <a class="pagination-link-number" href="#">1</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
+            <a class="pagination-link-number" href="#">2</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
+            <a class="pagination-link-number" href="#">3</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">...</a>
+            <a class="pagination-link-number" href="#">...</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">15</a>
+            <a class="pagination-link-number" href="#">15</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link pagination-next" href="#">Вперед</a>
+            <a class="pagination-link-next pagination-next" href="#">Вперед</a>
           </li>
         </ul>
+      </div>
       </section>
     </main>
     <footer class="page-footer">
