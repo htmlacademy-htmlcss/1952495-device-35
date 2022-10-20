@@ -22,8 +22,15 @@
   font-display: swap;
 }
 
+html{
+height: 100%;
+}
 
 body{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: Rubik, sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -33,12 +40,19 @@ body{
 
 /* Хедер */
 .page-header{
+  width: 1160px;
+  margin: 0 auto;
   background-color: #FFE17F;
   color: #000000;
 }
 
+.page-header-elements{
+  width: 1040px;
+  margin: 0 auto;
+}
+
 .visually-hidden{
-  visibility: hidden;
+  display: none;
 }
 
 .navigation-user-link{
@@ -46,9 +60,24 @@ body{
   text-decoration: none;
 }
 
+.navigation-user{
+  margin-left: auto;
+}
+.navigation-user-list{
+  width: 497px;
+}
+
 .search-button{
   font-size: 16px;
   line-height: 20px;
+}
+
+.navigation-information{
+  margin-left: auto;
+}
+
+.navigation-information-list{
+  width: 471px;
 }
 
 .catalog-open{
@@ -76,7 +105,42 @@ body{
   text-transform: uppercase;
 }
 
+
+.list-type{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.search-information{
+  width: 359px;
+}
+
+.search-button{
+  width: 160px;
+}
+.navigation-user-container{
+  display: flex;
+}
+
+.catalog-container{
+  display: flex;
+}
+
+
+/* Main */
+
 /* Слайдер */
+
+.main-container{
+  flex-grow: 1;
+}
+
+.page-container{
+  width: 1160px;
+  margin: 0 auto;
+}
+
 .title-item{
   font-family: Raleway, sans-serif;
   font-weight: 800;
@@ -103,6 +167,19 @@ body{
   color: #000000;
 }
 
+.slider-pagination-item{
+  display: flex;
+}
+
+.image-slider-container{
+  width: 560px;
+}
+
+.discription-slider-container{
+  width: 560px;
+}
+
+
 /* Продукты */
 
 .product-item{
@@ -119,6 +196,15 @@ body{
   text-decoration: none;
 }
 
+.product-list{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.product-item{
+  width: 160px;
+}
 /* Сервисы */
 .box-service{
   background-color: #F0F0F0;
@@ -142,14 +228,24 @@ body{
   color: #000000;
 }
 
+.services{
+  width: 1440px;
+  margin: 0 auto;
+}
 /* Заказ редкого товара */
 
-.box-product-order{
+.product-order-button{
   background-color: #F0F0F0;
+  width: 1160px;
 }
 
 /* Информация о компани  и контакты */
 
+.common-container{
+  display: flex;
+  justify-content: space-between;
+
+}
 .product-order-button{
   font-family: Raleway, sans-serif;
   font-weight: 800;
@@ -196,6 +292,9 @@ body{
   line-height: 30px;
 }
 
+.transport-company-item{
+  color: #000000;
+}
 /* Подписка на рассылку */
 
 .subscribe{
@@ -220,7 +319,26 @@ body{
   text-transform: uppercase;
 }
 
+.discription-subscribe-container{
+  display: flex;
+  justify-content: space-between;
+}
 
+.subscribe-container{
+  display: flex;
+}
+
+.user-email{
+  width: 557px;
+}
+
+.subscribe-button{
+  width: 253px;
+}
+
+.free{
+  margin-left: auto;
+}
 /* Футер */
 
 .page-footer{
@@ -248,6 +366,13 @@ body{
   line-height: 20px;
   font-style: normal;
   color: #ffffff;
+}
+
+.footer-container{
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Страница каталога */
@@ -297,9 +422,7 @@ body{
   line-height: 20px;
   color: #000000;
 }
-.inner-products-container{
-  background-color: #ffffff;
-}
+
 .inner-products-link{
   font-weight: 700;
   font-size: 18px;
@@ -358,4 +481,21 @@ body{
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
+}
+
+.catalog-product{
+  display: flex;
+}
+
+.catalog-filter{
+  width: 320px;
+  margin-right: 40px;
+}
+
+.catalog-right-colum{
+  width: 840px;
+}
+
+.right-column-background-container{
+  background-color: #FFFFFF;
 }
