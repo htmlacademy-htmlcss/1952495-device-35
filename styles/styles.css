@@ -71,6 +71,24 @@ body {
   overflow: hidden;
 }
 
+.icon-shop-opacity{
+  opacity: 1;
+  cursor: pointer;
+}
+
+.icon-shop-opacity:hover{
+  opacity: 0.6;
+}
+
+.icon-shop-opacity:focus-visible {
+  outline: 2px solid #AF4FFF;;
+  outline-offset: 2px;
+}
+
+.icon-shop-opacity:active{
+  opacity: 0.3;
+}
+
 .navigation-user-link {
   color: #000000;
   text-decoration: none;
@@ -85,13 +103,6 @@ body {
 .navigation-user-link:focus-visible {
   outline: 2px solid #AF4FFF;;
   outline-offset: 2px;
-}
-
-@supports not selector(:focus-visible) {
-  .navigation-user-link:focus {
-    outline: 2px solid #AF4FFF;;
-    outline-offset: 2px;
-  }
 }
 
 .navigation-user-link:active{
@@ -189,13 +200,6 @@ body {
   outline-offset: 2px;
 }
 
-@supports not selector(:focus-visible) {
-  .search-information:focus {
-    outline: 2px solid #AF4FFF;;
-    outline-offset: 2px;
-  }
-}
-
 .search-information:disabled {
   opacity: 0.3;
 }
@@ -228,13 +232,6 @@ body {
   outline-offset: 2px;
 }
 
-@supports not selector(:focus-visible) {
-  .search-button:focus {
-    outline: 2px solid #AF4FFF;;
-    outline-offset: 2px;
-  }
-}
-
 .search-button:active{
   color: rgba(255, 255, 255, 0.3);
 }
@@ -261,6 +258,14 @@ body {
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+.button-catalog-open .icon-opacity{
+  opacity: 0.3;
+}
+
+.button-catalog-open:hover .icon-opacity{
+  opacity: 1;
 }
 
 .button-catalog-close-icon{
@@ -304,13 +309,6 @@ body {
   outline-offset: 2px;
 }
 
-@supports not selector(:focus-visible) {
-  .navigation-catalog-link:focus {
-    outline: 2px solid #AF4FFF;;
-    outline-offset: 2px;
-  }
-}
-
 .navigation-catalog-link:active{
   opacity: 0.3;
 }
@@ -334,15 +332,8 @@ body {
 }
 
 .navigation-information-button:focus-visible {
-  outline: 2px solid #AF4FFF;;
+  outline: 2px solid #AF4FFF;
   outline-offset: 2px;
-}
-
-@supports not selector(:focus-visible) {
-  .navigation-information-button:focus {
-    outline: 2px solid #AF4FFF;;
-    outline-offset: 2px;
-  }
 }
 
 .navigation-information-button:active{
@@ -583,13 +574,6 @@ body {
   outline-offset: 2px;
 }
 
-@supports not selector(:focus-visible) {
-  .product-link:focus {
-    outline: 2px solid #AF4FFF;;
-    outline-offset: 2px;
-  }
-}
-
 .product-link {
   font-family: Raleway, sans-serif;
   font-weight: 800;
@@ -639,13 +623,10 @@ body {
 .more-detailed-button {
   position: relative;
   z-index: 1;
-
   display: block;
   padding-top: 10px;
   padding-bottom: 10px;
-
-  font-family: 'Raleway';
-  font-style: normal;
+  font-family: Raleway, sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -653,18 +634,10 @@ body {
   color: #000000;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-
   background: none;
   border: none;
   cursor: pointer;
   width: 160px;
-}
-
-.current-button{
-  font-family: Raleway, sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 21px;
 }
 
 .more-detailed-button::before {
@@ -673,12 +646,11 @@ body {
   top: 50%;
   left: -2px;
   z-index: -1;
-
   width: inherit;
   height: 8px;
   margin-top: -5px;
-
   background-color: #FFE17F;
+
 }
 
 .more-detailed-button:hover::before,
@@ -698,6 +670,11 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 
+/* .more-detailed-item:nth-child(1){
+  background-color: #000000;
+  width: 280px;
+} */
+
 .more-detailed-button:focus::before{
   background-color: #000000;
 }
@@ -708,6 +685,18 @@ body {
   text-align: start;
   left: 2px;
 }
+
+.start-position{
+  background-color: #000000;
+  width: 280px;
+  text-align: start;
+  left: 2px;
+  color: #FFE17F;
+}
+
+.start-position.more-detailed-button::before {
+  width: 0;
+ }
 
 .title-service {
   font-family: Raleway, sans-serif;
@@ -774,13 +763,6 @@ body {
 .product-order-button:focus-visible {
   outline: 2px solid #AF4FFF;;
   outline-offset: 2px;
-}
-
-@supports not selector(:focus-visible) {
-  .product-order-button:focus {
-    outline: 2px solid #AF4FFF;;
-    outline-offset: 2px;
-  }
 }
 
 .product-order-button:active{
@@ -1009,13 +991,6 @@ body {
   outline-offset: 2px;
 }
 
-@supports not selector(:focus-visible) {
-  .subscribe-button:focus {
-    outline: 2px solid #AF4FFF;;
-    outline-offset: 2px;
-  }
-}
-
 .subscribe-button:active{
   color: rgba(255, 255, 255, 0.3);
 }
@@ -1087,13 +1062,6 @@ body {
   outline-offset: 2px;
 }
 
-@supports not selector(:focus-visible) {
-  .footer-menu-link:focus {
-    outline: 2px solid #AF4FFF;;
-    outline-offset: 2px;
-  }
-}
-
 .footer-menu-link:active{
   opacity: 0.3;
 }
@@ -1148,13 +1116,6 @@ body {
   outline-offset: 2px;
 }
 
-@supports not selector(:focus-visible) {
-  .footer-social-item:focus {
-    outline: 2px solid #AF4FFF;;
-    outline-offset: 2px;
-  }
-}
-
 .social-icon:active{
   fill-opacity: 0.3;
 }
@@ -1184,13 +1145,6 @@ body {
   outline-offset: 2px;
 }
 
-@supports not selector(:focus-visible) {
-  .html-academy-image:focus {
-    outline: 2px solid #AF4FFF;;
-    outline-offset: 2px;
-  }
-}
-
 .html-academy-image:active{
   fill: #FFFFFF;
   opacity: 0.3;
@@ -1211,13 +1165,6 @@ body {
 .footer-contacts .contacts-phone:focus-visible {
   outline: 2px solid #AF4FFF;;
   outline-offset: 2px;
-}
-
-@supports not selector(:focus-visible) {
-  .footer-contacts .contacts-phone:focus {
-    outline: 2px solid #AF4FFF;;
-    outline-offset: 2px;
-  }
 }
 
 .footer-contacts .contacts-phone:active{
@@ -1290,13 +1237,6 @@ body {
   outline-offset: 2px;
 }
 
-@supports not selector(:focus-visible) {
-  .breadcrumbs-link:focus {
-    outline: 2px solid #AF4FFF;;
-    outline-offset: 2px;
-  }
-}
-
 .breadcrumbs-link:active{
   opacity: 0.3;
 }
@@ -1364,7 +1304,6 @@ body {
 
 .inner-products-item{
   position: relative;
-  z-index: 0;
 }
 
 .inner-products-link {
@@ -1382,13 +1321,14 @@ body {
   z-index: 1;
 }
 
-.inner-products-item:hover{
+.inner-products-link:hover{
   opacity: 0.5;
   cursor: pointer;
 }
 
 .inner-products-item:hover .more-detailed-link{
   display: block;
+  z-index: 1;
   position: absolute;
   top: 170px;
   left: 70px;
@@ -1397,13 +1337,6 @@ body {
 .inner-products-link:focus-visible {
   outline: 2px solid #AF4FFF;;
   outline-offset: 2px;
-}
-
-@supports not selector(:focus-visible) {
-  .inner-products-link:focus {
-    outline: 2px solid #AF4FFF;;
-    outline-offset: 2px;
-  }
 }
 
 .inner-products-title {
@@ -1448,13 +1381,6 @@ body {
 .show-more:focus-visible {
   outline: 2px solid #AF4FFF;;
   outline-offset: 2px;
-}
-
-@supports not selector(:focus-visible) {
-  .show-more:focus {
-    outline: 2px solid #AF4FFF;;
-    outline-offset: 2px;
-  }
 }
 
 .show-more:active{
@@ -1502,14 +1428,6 @@ body {
   outline-offset: 2px;
 }
 
-@supports not selector(:focus-visible) {
-  .pagination-button-back:focus,
-  .pagination-button-next:focus {
-    outline: 2px solid #AF4FFF;;
-    outline-offset: 2px;
-  }
-}
-
 .pagination-button-back:active,
 .pagination-button-next:active{
   opacity: 0.3;
@@ -1553,13 +1471,6 @@ body {
 .pagination-link-number:focus-visible {
   outline: 2px solid #AF4FFF;;
   outline-offset: 2px;
-}
-
-@supports not selector(:focus-visible) {
-  .pagination-link-number:focus {
-    outline: 2px solid #AF4FFF;;
-    outline-offset: 2px;
-  }
 }
 
 .pagination-link-number:active{
@@ -1616,13 +1527,6 @@ body {
   outline-offset: 2px;
 }
 
-@supports not selector(:focus-visible) {
-  .select-control:focus {
-    outline: 2px solid #AF4FFF;;
-    outline-offset: 2px;
-  }
-}
-
 .select-control:active{
   opacity: 0.3;
 }
@@ -1650,14 +1554,6 @@ body {
   outline-offset: 2px;
 }
 
-@supports not selector(:focus-visible) {
-  .sort-up-icon:focus
-  .sort-down-icon:focus {
-    outline: 2px solid #AF4FFF;;
-    outline-offset: 2px;
-  }
-}
-
 .sort-up-icon:active,
 .sort-down-icon:active{
   opacity: 1;
@@ -1682,13 +1578,6 @@ body {
 .control:focus-visible {
   outline: 2px solid #AF4FFF;;
   outline-offset: 2px;
-}
-
-@supports not selector(:focus-visible) {
-  .control:focus {
-    outline: 2px solid #AF4FFF;;
-    outline-offset: 2px;
-  }
 }
 
 .control:active{
