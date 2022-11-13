@@ -59,6 +59,31 @@
                   </svg>
                   Корзина
                 </a>
+                <div class="popover">
+                  <h2 class="visually-hidden">Корзина товаров</h2>
+                  <ul class="basket-list">
+                    <li class="basket-item">
+                      <a class="basket-product-link flex-container" href="#">
+                        <img class="basket-photo-product" src="../images/catalog/catalog-selfie-stick.jpg" alt="Любительская селфи-палка">
+                        <p class="basket-product-title">Любительская селфи-палка</p>
+                      </a>
+                      <button class="basket-delete-product"></button>
+                    </li>
+                    <li class="basket-item">
+                      <a class="basket-product-link flex-container" href="#">
+                        <img class="basket-photo-product" src="../images/catalog/catalog-selfie-stick-professional.jpg" alt="Профессиональная селфи-палка">
+                        <p class="basket-product-title">Профессиональная селфи-палка</p>
+                      </a>
+                      <button class="basket-delete-product"></button>
+                    </li>
+                  </ul>
+                  <div class="price-product-container">
+                    <p class="products-amount number-products">Товаров: 2</p>
+                    <p class="products-amount price-products">Сумма: 2000 Р</p>
+                  </div>
+                  <button class="open-basket">Открыть корзину</button>
+                  <div class="popover-rectangle"></div>
+                </div>
               </li>
             </ul>
           </nav>
@@ -87,7 +112,6 @@
                 <path d="M33 24.787H17V26.787H33V24.787Z" fill="black"/>
                 </g>
                 </svg>
-
             </button>
             <nav class="navigation-catalog">
               <ul class="navigation-catalog-list reset-list">
@@ -133,26 +157,28 @@
       <div class="page-container">
         <section class="gallery">
           <h2 class="visually-hidden">Фото и информация о девайсах</h2>
-          <button class="slider-button slider-prev visually-hidden" type="button">
-            <span class="visually-hidden">Предыдущее фото</span>
-            <svg width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M20 60H16.5L0 30L16.5 0H20L3.8 30L20 60Z" fill="black" />
-            </svg>
-          </button>
-          <button class="slider-button slider-next visually-hidden" type="button">
-            <span class="visually-hidden">Следующее фото</span>
-            <svg width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M-5.24537e-06 1.74846e-06L3.49999 1.44248e-06L20 30L3.5 60L0 60L16.2 30L-5.24537e-06 1.74846e-06Z"
-                fill="black" />
-            </svg>
-          </button>
           <ul class="slider-pagination reset-list">
             <li class="slider-pagination-item">
               <p class="slide-number">01</p>
               <div class="image-slider-container">
                 <img class="slider-image" src="images/slider/slider-quadrocopter.png" width="560" height="560"
                   alt="Квадрокоптер">
+                  <div class="slider-button-container">
+                    <button class="slider-button slider-prev" type="button">
+                      <span class="visually-hidden">Предыдущее фото</span>
+                      <svg width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 60H16.5L0 30L16.5 0H20L3.8 30L20 60Z" fill="black" />
+                      </svg>
+                    </button>
+                    <button class="slider-button slider-next" type="button">
+                      <span class="visually-hidden">Следующее фото</span>
+                      <svg width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M-5.24537e-06 1.74846e-06L3.49999 1.44248e-06L20 30L3.5 60L0 60L16.2 30L-5.24537e-06 1.74846e-06Z"
+                          fill="black" />
+                      </svg>
+                    </button>
+                  </div>
               </div>
               <div class="discription-slider-container">
                 <b class="title-item">Порхает как бабочка, жалит как пчела!</b>
@@ -213,6 +239,23 @@
               </div>
             </li>
           </ul>
+          <ol class="slider-pagination-ol">
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                <span class="visually-hidden">1 фото</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">2 фото</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">3 фото</span>
+              </button>
+            </li>
+          </ol>
         </section>
         <section class="product">
           <h2 class="visually-hidden">Гаджеты</h2>
@@ -345,7 +388,7 @@
         </div>
       </section>
       <section class="contacts page-container">
-        <button class="product-order-button" type="button">
+        <a class="product-order-button">
           <div class="product-order-image">
             <svg width="47" height="31" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -357,8 +400,8 @@
             </svg>
           </div>
           <p class="product-order-text">Доставим редкий товар под заказ</p>
-          <svg class="product-order-more-information" width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="20.5" cy="20" r="20" fill="#DCDCDC" fill-opacity="0.5"/>
+          <svg class="product-order-more-information" width="41" height="40" opacity="0.5" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20.5" cy="20" r="20" fill="#DCDCDC"/>
             <g opacity="0.3" clip-path="url(#clip0_34160_666)">
             <path d="M21 14H19V16H21V14Z" fill="black"/>
             <path d="M21 18H19V26H21V18Z" fill="black"/>
@@ -369,7 +412,7 @@
             </clipPath>
             </defs>
           </svg>
-        </button>
+        </a>
         <div class="common-container">
           <div class="about-company-container">
             <div class="rectangle"></div>
@@ -521,6 +564,66 @@
         </section>
       </div>
     </footer>
+
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-order">
+        <div class="title-order-wrapper">
+          <section class="modal-content">
+            <h2 class="modal-title">Доставка под заказ</h2>
+          </section>
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+        </div>
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <div class="order-infromation">
+            <label class="order-user-name-wrapper">
+              <span class="order-title-input">Ваше имя:</span>
+              <input class="order-input order-user-name" type="email" placeholder="Введите имя">
+              <span class="span-add-name">Добавьте имя</span>
+            </label>
+            <label class="order-user-email-wrapper">
+              <span class="order-title-input">Ваш e-mail:</span>
+              <input class="order-input order-user-email" type="email" placeholder="Ваш e-mail">
+              <span class="span-add-name color-invalid">Забавный у вас адрес</span>
+            </label>
+          </div>
+          <div class="order-information-additionally">
+            <label class="order-user-additionally">
+              <span class="order-title-input">Что нужно привезти:</span>
+              <input class="order-input" type="email" placeholder="В свободной форме">
+            </label>
+            <div class="add-subtract-product-container">
+              <span class="form-label">
+                <span class="count-product-title">Количество:</span>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                    <span class="tooltip-icon">i</span>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</span>
+                </span>
+              </span>
+
+              <div class="add-subtract-product">
+                <button class="count-product-button">
+                  <span class="visually-hidden">Уменьшить количество товаров</span>
+                  <span class="minus"></span>
+                </button>
+                <label class="count-products-label">
+                  <span class="visually-hidden">Количество товаров</span>
+                  <input class="number-products" type="number" value="1" name="count-products">
+                </label>
+                <button class="count-product-button add-product">
+                  <span class="visually-hidden">Добавить количество товаров</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <button class="more-detailed-button">Отправить</button>
+        </form>
+      </div>
+
+    </div>
   </body>
 
 </html>
