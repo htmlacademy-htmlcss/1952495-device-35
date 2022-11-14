@@ -383,10 +383,13 @@ body {
 .button-catalog-open:focus + .navigation-catalog{
   display: block;
   background-color: #FFE17F;
+  position: absolute;
+  width: 1160px;
   height: 175px;
-  right: 0;
-  left: 0;
-  z-index: 1;
+  right: -60px;
+  z-index: 2;
+
+
 }
 
 /* Main */
@@ -465,7 +468,7 @@ body {
   margin-right: 20px;
 }
 
-.slider-pagination-ol .slider-pagination-item:nth-last-child(){
+.slider-pagination-ol .slider-pagination-item:last-child{
   margin-right: 0;
 }
 
@@ -612,7 +615,6 @@ body {
   background: linear-gradient(#FFE17F 26%, transparent 20%);
   margin-bottom: 70px;
   position: relative;
-  z-index: -1;
 }
 
 /* Продукты */
@@ -1869,6 +1871,7 @@ body {
   right: -77px;
   box-sizing: border-box;
   display: none;
+  z-index: 2;
 }
 
 .popover-open {
@@ -2295,7 +2298,7 @@ body {
 }
 
 .modal-container-close {
-  display: none;
+display: none;
 }
 
 .tooltip {
