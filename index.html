@@ -98,7 +98,7 @@
 
         <div class="catalog-container">
           <div>
-            <button class="button-catalog-open" type="submit">
+            <button class="button-catalog-open" type="button">
               <span class="catalog-open">Каталог товаров</span>
               <span class="visually-hidden">Открыть каталог</span>
               <svg class="button-catalog-open-icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
@@ -356,51 +356,45 @@
             </li>
           </ul>
         </section>
-      </div>
-
-      <section class="services">
-        <h2 class="visually-hidden">Сервисы</h2>
-        <div class="services-container">
-          <ul class="services-list reset-list">
-            <li class="more-detailed-item">
-              <button class="more-detailed-button current-button start-position" type="button">Доставка</button>
-            </li>
-            <li class="more-detailed-item">
-              <button class="more-detailed-button current-button" type="button">Гарантия</button>
-            </li>
-            <li class="more-detailed-item">
-              <button class="more-detailed-button current-button" type="button">Кредит</button>
-            </li>
-          </ul>
-          <div class="box-service-item">
-            <div class="service-description-container">
-              <h3 class="title-service">Доставка</h3>
-              <p class="description-service">Мы с удовольствием доставим ваш товар прямок вашему подъезду совершенно
-                бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-            </div>
-            <img class="image-service" src="images/services/service-person-delivery.png" width="136" height="164"
-              alt="Доставка товара.">
-          </div>
-          <div class="box-service visually-hidden">
-            <h3 class="title-service">Гарантия</h3>
-            <p class="description-service">Если из-за возгорания купленного у нас товара у вас сгорит дом - не
-              переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-            <img class="image-service" src="images/services/service-credit.png" width="171" height="195"
-              alt="Гарантия товара.">
-          </div>
-          <div class="box-service visually-hidden">
-            <h3 class="title-service">Кредит</h3>
-            <p class="description-service">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
-              наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
-            <img class="image-service" src="images/services/service-warranty.png" width="156" height="188"
-              alt="Кредит на товар.">
-          </div>
         </div>
-      </section>
-      <section class="contacts page-container">
-        <a class="product-order-button">
-          <div class="product-order-image">
-            <svg width="47" height="31" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+        <section class="services">
+          <h2 class="visually-hidden">Сервисы</h2>
+          <div class="services-container">
+            <ul class="services-list reset-list">
+              <li class="more-detailed-item">
+                <button class="more-detailed-button current-button start-position" type="button">Доставка</button>
+              </li>
+              <li class="more-detailed-item">
+                <button class="more-detailed-button current-button" type="button">Гарантия</button>
+              </li>
+              <li class="more-detailed-item">
+                <button class="more-detailed-button current-button" type="button">Кредит</button>
+              </li>
+            </ul>
+            <div class="box-service-item">
+              <div class="box-service change-type">
+                <h3 class="title-service">Доставка</h3>
+                <p class="description-service">Мы с удовольствием доставим ваш товар прямок вашему подъезду совершенно
+                  бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+              </div>
+              <div class="box-service visually-hidden change-type">
+                <h3 class="title-service">Гарантия</h3>
+                <p class="description-service">Если из-за возгорания купленного у нас товара у вас сгорит дом - не
+                  переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+              </div>
+              <div class="box-service visually-hidden change-type">
+                <h3 class="title-service">Кредит</h3>
+                <p class="description-service">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
+                  наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contacts page-container">
+          <a class="product-order-button">
+            <div class="product-order-image">
+              <svg width="47" height="31" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="m46.7 15.4-6.5-8.2c-.3-.4-.7-.6-1.2-.6h-8.3V1.5C30.7.7 30 0 29.2 0H1.5C.7 0 0 .7 0 1.5S.7 3 1.5 3h26.2v21.7H15.8a4.7 4.7 0 0 0-4.5-3.3 4.9 4.9 0 0 0-4.8 4.8c0 2.6 2.2 4.8 4.8 4.8 2.1 0 3.9-1.4 4.5-3.3h13.4c.8 0 1.5-.7 1.5-1.5V9.6h7.6l5.7 7.3v7.9h-2.2a4.7 4.7 0 0 0-4.5-3.3 4.9 4.9 0 0 0-4.8 4.8c0 2.6 2.1 4.8 4.8 4.8 2.1 0 3.9-1.4 4.5-3.3h3.7c.8 0 1.5-.7 1.5-1.5v-9.9c0-.4-.1-.7-.3-1ZM11.3 28c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.9 1.8-1.8 1.8Zm26.1 0c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.9 1.8-1.8 1.8Z"
                 fill="#000" />
